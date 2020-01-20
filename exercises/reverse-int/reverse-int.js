@@ -1,24 +1,11 @@
 const reverseInt = number => {
-  let numString = "";
-  if (number < 0) {
-    numString = number.toString().slice(1);
+  let numString = number
+    .toString()
+    .split("")
+    .reverse()
+    .join("");
 
-    return parseInt(
-      "-" +
-        numString
-          .split("")
-          .reverse()
-          .join("")
-    );
-  } else {
-    return parseInt(
-      number
-        .toString()
-        .split("")
-        .reverse()
-        .join("")
-    );
-  }
+  return number >= 0 ? parseInt(numString) : parseInt("-" + numString);
 };
 
 module.exports = reverseInt;
