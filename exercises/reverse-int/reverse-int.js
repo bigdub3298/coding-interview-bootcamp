@@ -5,6 +5,7 @@ const reverseInt = number => {
     .reverse()
     .join("");
 
+  // can use math.sign(number) to handle the sign
   return number >= 0 ? parseInt(numString) : parseInt("-" + numString);
 };
 

@@ -1,6 +1,6 @@
 const isPalindrome = require("./palindrome");
 
-test("isPalindrome exists", () => {
+test("isPalindrome function exists", () => {
   expect(isPalindrome).toBeDefined();
 });
 
