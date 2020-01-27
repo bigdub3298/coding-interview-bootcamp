@@ -17,7 +17,7 @@ const matrix = number => {
       result[startRow][i] = counter++;
     }
     startRow++;
-    // last column
+    // right column
     for (let i = startRow; i <= endRow; i++) {
       result[i][endColumn] = counter++;
     }
@@ -27,7 +27,7 @@ const matrix = number => {
       result[endRow][i] = counter++;
     }
     endRow--;
-    // first column
+    // left column
     for (let i = endRow; i >= startRow; i--) {
       result[i][startColumn] = counter++;
     }
