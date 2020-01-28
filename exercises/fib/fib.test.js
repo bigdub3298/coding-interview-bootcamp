@@ -13,7 +13,7 @@ test("calcualtes fib value for 2", () => {
 });
 
 test("caluculates fib for 4", () => {
-  expect(fib(4)).toBe(5);
+  expect(fib(4)).toBe(3);
 });
 
 test("calculates fib value for 25", () => {
