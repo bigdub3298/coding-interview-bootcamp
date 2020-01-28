@@ -37,7 +37,7 @@ const matrix = (rows, cols) => {
     }
     startColumn++;
   }
-  console.log(result);
+  return result;
 };
 
-matrix(5, 5);
+module.exports = matrix;
