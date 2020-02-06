@@ -29,4 +29,16 @@ describe("Stack", () => {
     expect(s.remove()).toBe(2);
     expect(s.remove()).toBe(1);
   });
+
+  test("peek function returns top of stack without removal", () => {
+    const s = new Stack();
+
+    s.add(1);
+    s.add(2);
+
+    expect(s.peek()).toBe(2);
+    expect(s.peek()).toBe(2);
+    expect(s.remove()).toBe(2);
+    expect(s.remove()).toBe(1);
+  });
 });
